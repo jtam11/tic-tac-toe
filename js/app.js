@@ -32,7 +32,7 @@ $(document).ready(function() {
     } else if ( $('#a3').text() === "X" && $('#b2').text() === "X" && $('#c1').text() === "X" ) {
       winner = "X";
     } else if ( $('#a1').text() === "O" && $('#a2').text() === "O" && $('#a3').text() === "O" ) {
-        winner = "O";
+      winner = "O";
     } else if ( $('#b1').text() === "O" && $('#b2').text() === "O" && $('#b3').text() === "O" ) {
       winner = "O";
     } else if ( $('#c1').text() === "O" && $('#c2').text() === "O" && $('#c3').text() === "O" ) {
