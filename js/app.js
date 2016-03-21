@@ -51,23 +51,26 @@ $(document).ready(function() {
     return winner;
   }
 
+  $('.messages').text(player + "'s" + " turn");
+
   $('.box').on('click', function addMarker() {
     if ($(this).text() === "") {
-
       $(this).text(player);
       $(this).addClass(player);
       count ++;
       console.log(count);
-      var winner = getWinner();
-      if (winner) {
-        alert(winner + " has won!");
+
+      if ( getWinner() ) {
+        $('.messages').text(getWinner() + " is the winner!");
       } else if (count < 9) {
         nextPlayer();
+        $('.messages').text(player + "'s" + " turn");
       } else {
-        alert("It's a Draw!");
+        $('.messages').text("It's a draw!");
       }
+
     } else {
-      alert("Taken");
+      $('.messages').text("Space is already taken");
     }
   });
 
@@ -77,5 +80,6 @@ $(document).ready(function() {
     $('.box').removeClass("O");
     player = "X";
     count = 0;
+    $('.messages').text(player + "'s" + " turn");
   });
 });
