@@ -61,12 +61,14 @@ $(document).ready(function() {
       console.log(count);
 
       if ( getWinner() ) {
-        $('.messages').text(getWinner() + " is the winner!");
+        $('.messages').text(getWinner() + " is the winner! Reset to start new game.");
+        $('.box').off('click');
       } else if (count < 9) {
         nextPlayer();
         $('.messages').text(player + "'s" + " turn");
       } else {
-        $('.messages').text("It's a draw!");
+        $('.messages').text("It's a draw! Reset to start a new game.");
+        $('.box').off('click');
       }
 
     } else {
