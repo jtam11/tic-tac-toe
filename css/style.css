@@ -6,10 +6,37 @@
   color: #000000;
 }
 .box {
-  border: 1px solid #000000;
   height: 150px;
   font-size: 90px;
 }
+  #a1 {
+    border-right: 5px groove #7a7979;
+    border-bottom: 5px groove #7a7979;
+  }
+  #a2 {
+    border-bottom: 5px groove #7a7979;
+  }
+  #a3 {
+    border-left: 5px groove #7a7979;
+    border-bottom: 5px groove #7a7979;
+  }
+  #b1 {
+    border-right: 5px groove #7a7979;
+    border-bottom: 5px groove #7a7979;
+  }
+  #b2 {
+    border-bottom: 5px groove #7a7979;
+  }
+  #b3 {
+    border-left: 5px groove #7a7979;
+    border-bottom: 5px groove #7a7979;
+  }
+  #c1 {
+    border-right: 5px groove #7a7979;
+  }
+  #c3 {
+    border-left: 5px groove #7a7979;
+  }
 
 .X {
   color: #ea6206;
