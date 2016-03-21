@@ -8,4 +8,8 @@ $(document).ready(function() {
     $(this).text(player);
   });
 
+  $('#reset').on('click', function resetBoard() {
+    $('.box').text('');
+  });
+
 });
